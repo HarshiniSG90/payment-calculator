@@ -1,15 +1,12 @@
 package com.hsbc.service;
 
-import com.hsbc.dto.Currency;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
-
 import java.io.ByteArrayInputStream;
-import java.io.InputStream;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Scanner;
-
+/*
+ * PaymentCalculatorTest which helps in running test cases to test Payment calculator class behaviour
+ * */
 public class PaymentCalculatorTest {
 
     private PaymentCalculator paymentCalculator;

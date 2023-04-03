@@ -6,7 +6,10 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import java.util.HashMap;
 import java.util.Map;
-
+/*
+* This is the Payment Utility Class which helps in updating the payment,
+* displaying the payment.
+* */
 
 @AllArgsConstructor
 @Data

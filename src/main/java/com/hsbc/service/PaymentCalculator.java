@@ -6,7 +6,9 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
-
+/*
+ * Payment Calculator which is used to calculate the Payments.
+ * */
 @Data
 public class PaymentCalculator {
     private Payment payment;
