@@ -48,8 +48,8 @@ Note: Please make sure you enter USD 100 and click enter and then add INR 300 an
 Wait for 1 min to see each payment to display in the console.
 
 2. This is for the optional bonus question
-
-Just enter input.txt in the console
+NOTE:
+Please edit configuration in Intellij and add input.txt in program arguments.
 then this will load the file with all payments.
 
 Wait for 1 min to see each payment to display in the console. whenever any new payment is added in the console.
@@ -66,3 +66,5 @@ Improvement:
 
 1. I could have used Currency util for this solution instead of using String in Map of balances.
 2. Can write more test cases to test all corner test cases.
+
+
