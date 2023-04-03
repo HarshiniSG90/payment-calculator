@@ -13,7 +13,10 @@ import java.util.Scanner;
 public class PaymentCalculatorTest {
 
     private PaymentCalculator paymentCalculator;
-    private Payment payment;
+    @BeforeEach
+    public void setUp() {
+        paymentCalculator = new PaymentCalculator();
+    }
 
     @Test
     public void testStartAndQuit() {
@@ -27,8 +30,8 @@ public class PaymentCalculatorTest {
     @Test
     public void testInvalidInput() {
         String input = "ABC\nquit\n";
-        InputStream in = new ByteArrayInputStream(input.getBytes());
-        System.setIn(in);
+        Scanner mockScanner = new Scanner(new ByteArrayInputStream(input.getBytes()));
+        paymentCalculator.setScanner(mockScanner);
         paymentCalculator.addPayment();
         assertFalse(paymentCalculator.isRunning());
     }

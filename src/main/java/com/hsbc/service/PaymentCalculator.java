@@ -41,7 +41,7 @@ public class PaymentCalculator {
                     try {
                         String currency = parts[0].toUpperCase();
                         if(currency.length() >3) {
-                            System.out.println("Invalid input. Please enter the curreny code with 3 capital letter for e.g. USD, HKD, CNY, NZD, GBP");
+                            System.out.println("Invalid input :: "+currency+" Please enter the curreny code with 3 capital letter for e.g. USD, HKD, CNY, NZD, GBP");
                         }
                         else {
                             double amount = Double.parseDouble(parts[1]);
@@ -50,6 +50,7 @@ public class PaymentCalculator {
                         }
                     } catch (NumberFormatException e) {
                         System.out.println("Invalid input. Amount must be a number.");
+                        scanner.close();
                     }
                 }
             }
@@ -57,9 +58,11 @@ public class PaymentCalculator {
                TimeUnit.MINUTES.sleep(1);
             } catch (InterruptedException e) {
                 e.printStackTrace();
+                scanner.close();
             }
             payment.displayPayments();
         }
+        scanner.close();
     }
 
     private void uploadPaymentsUsingFile() {
@@ -75,7 +78,6 @@ public class PaymentCalculator {
                     payment.updatePayment(currencyDetail);
                 }
             }
-            fileScanner.close();
         } catch (FileNotFoundException e) {
             System.out.println("File not found: " + fileName);
         } catch (NumberFormatException e) {
