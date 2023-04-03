@@ -38,11 +38,12 @@ OR run the below command
 
 1. When the program runs it will take input from command line console and output to console (stdout).
 
-For Example:
-
+For Example: 
 USD 100
 INR 300
 EUR 90
+
+Note: Please make sure you enter USD 100 and click enter and then add INR 300 and so on..
 
 Wait for 1 min to see each payment to display in the console.
 
