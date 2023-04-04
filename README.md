@@ -60,11 +60,9 @@ Limitations :
 2. Every entry of the Payment is taking a min to display , but thats expected as per the problem statement. However in the second optional bonus question also I have implemented this 1 min lag.
 This can be changed ofcouse if not required.
 
-3. For some reason in my command line I am unable to enter multiple payments at a single shot, However its working perfectly fine with one payment and waiting for 1 min and then and payment needs to be added, However this is not the case with Intellij command line it working as expected. Sinc its time bound task I couldnt dig much into this error, Given some more time I can fix this issue.
-
 Improvement:
 
-1. I could have used Currency util for this solution instead of using String in Map of balances.
+1. I could have used Currency which is in java.util for this solution instead of using String in Map of balances.
 2. Can write more test cases to test all corner test cases.
 
 
